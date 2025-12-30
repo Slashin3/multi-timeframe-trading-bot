@@ -35,3 +35,38 @@ A modular, event-driven algorithmic trading engine built for the Binance ecosyst
 Verify the strategy performance on historical data.
 ```bash
 python backtest_runner.py
+
+Output: backtest_trades.csv
+
+2. Run Live Trader
+Connects to Binance Testnet.
+
+Security Note: The system will prompt you for API keys at runtime. Do not hardcode keys in the script.
+
+Bash
+
+python live_trader.py
+Output: live_trades.csv
+
+⚠️ Disclaimer
+This software is for educational purposes only. Do not risk capital you cannot afford to lose.
+
+
+---
+
+### **Final File Structure Checklist**
+
+Before you run `git init`, your folder should look exactly like this:
+
+1.  `live_trader.py` (The clean version I just gave you)
+2.  `strategy.py` (With the logic and config)
+3.  `backtest_runner.py` (The simulation script)
+4.  `README.md` (The text above)
+5.  `requirements.txt` (The list of libraries)
+6.  `.gitignore` (Important! Containing `__pycache__` and `.env`)
+
+**Do NOT include:**
+* `BTCUSDT_1m.csv` (Too big for GitHub)
+* Any file with your real API keys inside.
+
+**You are ready to push.** Go ahead and initialize the repo!
